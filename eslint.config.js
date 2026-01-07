@@ -21,6 +21,7 @@ export default defineConfig([
     },
     rules: {
       'object-curly-spacing': ['error', 'always'],
+      'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
     },
   },
 ])

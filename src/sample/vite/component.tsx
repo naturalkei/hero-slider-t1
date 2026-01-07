@@ -1,10 +1,9 @@
 import './style.css'
 
+import reactLogo from '@/assets/react.svg'
 import viteLogo from '/vite.svg'
 import clsx from 'clsx'
 import React, { useState } from 'react'
-
-import reactLogo from '../assets/react.svg'
 
 const CustomLink = ({ href, target, className, children }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
