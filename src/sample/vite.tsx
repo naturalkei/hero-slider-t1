@@ -47,8 +47,8 @@ export default function App() {
               src={reactLogo}
               className={clsx([
                 'h-24 px-6',
-                'will-change-[filter] transition-[filter]',
-                'duration-300 hover:drop-shadow-[0_0_2em_#61dafbaa]',
+                'will-change-[filter] transition-[filter] duration-300',
+                'hover:drop-shadow-[0_0_2em_#61dafbaa]',
                 'animate-[spin_20s_linear_infinite] motion-reduce:animate-none'
               ])}
               alt="React logo"
