@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Noto Sans KR', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
         primary: '#646cff',
