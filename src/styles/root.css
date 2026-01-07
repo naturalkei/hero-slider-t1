@@ -18,43 +18,10 @@
     @apply m-0 flex place-items-center min-w-[320px] min-h-screen justify-center;
   }
 
-  a {
-    @apply font-medium no-underline;
-    color: #646cff;
-  }
-
-  a:hover {
-    color: #535bf2;
-  }
-
-  h1 {
-    @apply text-[3.2em] leading-[1.1];
-  }
-
-  button {
-    @apply rounded-lg border border-transparent px-[1.2em] py-[0.6em] text-base font-medium font-sans bg-[#1a1a1a] cursor-pointer transition-[border-color] duration-[0.25s];
-  }
-
-  button:hover {
-    border-color: #646cff;
-  }
-
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
-
   @media (prefers-color-scheme: light) {
     :root {
       @apply text-[#213547] bg-white;
     }
-
-    a:hover {
-      color: #747bff;
-    }
-
-    button {
-      @apply bg-[#f9f9f9];
-    }
   }
 }
+
