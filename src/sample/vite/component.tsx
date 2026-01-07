@@ -1,4 +1,4 @@
-import './vite.css'
+import './style.css'
 
 import viteLogo from '/vite.svg'
 import clsx from 'clsx'
