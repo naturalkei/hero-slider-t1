@@ -11,11 +11,9 @@ export default {
         sans: ['system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
-        primary: {
-          DEFAULT: '#646cff',
-          hover: '#535bf2',
-          'hover-light': '#747bff',
-        },
+        primary: '#646cff',
+        'primary-hover': '#535bf2',
+        'primary-hover-light': '#747bff',
       },
     },
   },
