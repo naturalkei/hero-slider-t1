@@ -1,8 +1,11 @@
 @import "tailwindcss";
+@config "../../tailwind.config.js";
 
 @theme {
   --font-sans: 'Noto Sans KR', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
   :root {

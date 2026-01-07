@@ -64,16 +64,24 @@ export default function App() {
               'rounded-lg border border-transparent',
               'px-[1.2em] py-[0.6em]',
               'text-base font-medium font-sans',
-              'bg-[#1a1a1a]',
+              'bg-button-light dark:bg-button-dark',
+              'text-body-light dark:text-[rgba(255,255,255,0.87)]',
               'cursor-pointer',
               'transition-[border-color] duration-[0.25s]',
-              'hover:border-[#646cff]'
+              'hover:border-primary dark:hover:border-primary'
             ])}
           >
             count is {count}
           </button>
           <p className="my-8">
-            Edit <code className="font-mono bg-[#1a1a1a] dark:bg-[#1a1a1a] px-2 py-1 rounded">src/App.tsx</code> and save to test HMR
+            Edit&nbsp;
+            <code className={clsx([
+              'font-mono',
+              'bg-button-light dark:bg-button-dark',
+              'text-body-light dark:text-[rgba(255,255,255,0.87)]',
+              'px-2 py-1 rounded',
+            ])}>src/App.tsx</code>
+            &nbsp;and save to test HMR
           </p>
         </div>
         <p className="text-[#888]">

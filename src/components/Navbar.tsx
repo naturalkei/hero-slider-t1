@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
@@ -41,23 +42,34 @@ export default function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-[#242424] border-b border-gray-200 dark:border-gray-700 shadow-sm">
+    <div className={clsx([
+      'fixed top-0 left-0 right-0 z-50',
+      'bg-bg-light dark:bg-bg-dark',
+      'border-b border-border-light dark:border-border-dark',
+      'shadow-sm',
+    ])}>
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-lg font-semibold text-[#213547] dark:text-[rgba(255,255,255,0.87)]">
+            <h1 className="text-lg font-semibold text-body-light dark:text-[rgba(255,255,255,0.87)]">
               Hero Slider
             </h1>
           </div>
           <button
             onClick={toggleDarkMode}
-            className="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 dark:bg-[#1a1a1a] hover:bg-gray-200 dark:hover:bg-[#2a2a2a] transition-colors duration-200"
+            className={clsx([
+              'flex items-center justify-center w-10 h-10 rounded-lg',
+              'cursor-pointer',
+              'bg-button-light dark:bg-button-dark',
+              'hover:bg-button-hover-light dark:hover:bg-button-hover-dark',
+              'transition-colors duration-200',
+            ])}
             aria-label={isDark ? '라이트 모드로 전환' : '다크 모드로 전환'}
           >
             {isDark ? (
-              <Sun className="w-5 h-5 text-yellow-500" />
+              <Sun className="w-5 h-5 text-icon-dark" />
             ) : (
-              <Moon className="w-5 h-5 text-gray-700" />
+              <Moon className="w-5 h-5 text-icon-light" />
             )}
           </button>
         </div>
@@ -65,4 +77,3 @@ export default function Navbar() {
     </div>
   )
 }
-
