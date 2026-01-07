@@ -13,7 +13,7 @@ const appRoutes = [
     href: '/vite',
   },
   {
-    label: 'Airpods Pro 3',
+    label: 'AirPods Pro 3',
     href: '/airpods-pro-3',
   },
   {
@@ -68,7 +68,7 @@ export default function Navbar() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-extrabold tracking-tight bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <h1 className="font-roboto text-2xl font-extrabold tracking-tight bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               <a href="/" className="no-underline text-transparent">
                 HERO SLIDER
               </a>
@@ -84,7 +84,7 @@ export default function Navbar() {
                     <a
                       href={route.href}
                       className={clsx([
-                        'relative px-4 py-2 rounded-lg text-sm font-semibold',
+                        'relative px-4 py-2 rounded-lg text-sm font-roboto',
                         'transition-all duration-300 ease-in-out',
                         isActive
                           ? [

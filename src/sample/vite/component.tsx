@@ -5,15 +5,15 @@ import viteLogo from '/vite.svg'
 import clsx from 'clsx'
 import React, { useState } from 'react'
 
-const CustomLink = ({ href, target, className, children }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+const CustomLink = ({ className, children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
-    <a href={href} target={target} className={clsx([
+    <a className={clsx([
       'font-medium no-underline text-primary',
       'hover:text-primary-hover',
       'dark:hover:text-primary-hover',
       '[@media(prefers-color-scheme:light)]:hover:text-primary-hover-light',
       className
-    ])}>
+    ])} {...props}>
       {children}
     </a>
   )
@@ -77,7 +77,7 @@ export default function App() {
               'font-mono',
               'bg-button-light dark:bg-button-dark',
               'px-2 py-1 rounded',
-            ])}>src/App.tsx</code>
+            ])}>src/sample/vite/component.tsx</code>
             &nbsp;and save to test HMR
           </p>
         </div>

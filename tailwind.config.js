@@ -20,6 +20,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Noto Sans KR', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif']
       },
       colors: {
         primary: '#646cff',
