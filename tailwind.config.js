@@ -38,7 +38,8 @@ export default {
         'border-light': '#e5e7eb', // gray-200
         'border-dark': '#374151', // gray-700
         'icon-light': '#374151', // gray-700
-        'icon-dark': '#eab308', // yellow-500
+        // 'icon-dark': '#eab308', // yellow-500
+        'icon-dark': '#ffffff', // yellow-500
       },
     },
   },

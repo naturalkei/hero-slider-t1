@@ -51,7 +51,7 @@ export default function Navbar() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-lg font-semibold text-body-light dark:text-[rgba(255,255,255,0.87)]">
+            <h1 className="text-lg font-semibold">
               Hero Slider
             </h1>
           </div>

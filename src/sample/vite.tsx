@@ -65,7 +65,6 @@ export default function App() {
               'px-[1.2em] py-[0.6em]',
               'text-base font-medium font-sans',
               'bg-button-light dark:bg-button-dark',
-              'text-body-light dark:text-[rgba(255,255,255,0.87)]',
               'cursor-pointer',
               'transition-[border-color] duration-[0.25s]',
               'hover:border-primary dark:hover:border-primary'
@@ -78,7 +77,6 @@ export default function App() {
             <code className={clsx([
               'font-mono',
               'bg-button-light dark:bg-button-dark',
-              'text-body-light dark:text-[rgba(255,255,255,0.87)]',
               'px-2 py-1 rounded',
             ])}>src/App.tsx</code>
             &nbsp;and save to test HMR
