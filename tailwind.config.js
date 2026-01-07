@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'media', // prefers-color-scheme 미디어 쿼리 사용
+  darkMode: 'class', // 클래스 기반 다크모드 사용
   theme: {
     extend: {
       fontFamily: {
