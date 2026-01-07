@@ -9,10 +9,10 @@ import reactLogo from '../assets/react.svg'
 const CustomLink = ({ href, target, className, children }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
     <a href={href} target={target} className={clsx([
-      'font-medium no-underline text-[#646cff]',
-      'hover:text-[#535bf2]',
-      'dark:hover:text-[#535bf2]',
-      '[@media(prefers-color-scheme:light)]:hover:text-[#747bff]',
+      'font-medium no-underline text-primary',
+      'hover:text-primary-hover',
+      'dark:hover:text-primary-hover',
+      '[@media(prefers-color-scheme:light)]:hover:text-primary-hover-light',
       className
     ])}>
       {children}
@@ -82,7 +82,7 @@ export default function App() {
             &nbsp;and save to test HMR
           </p>
         </div>
-        <p className="text-[#888]">
+        <p className="text-xs text-gray-500">
           Click on the Vite and React logos to learn more
         </p>
       </div>
